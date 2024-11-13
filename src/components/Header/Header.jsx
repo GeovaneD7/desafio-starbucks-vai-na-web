@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/starbucks-logo.svg"
+import "./headerStyle"
 
 export default function Header() {
   return (
-    <header>
+    <Header>
+      <img src={logo} alt="" />
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -14,6 +17,6 @@ export default function Header() {
           <Link to="/about">Sobre</Link>
         </li>
       </ul>
-    </header>
+    </Header>
   );
 };
