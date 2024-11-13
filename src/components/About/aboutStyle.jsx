@@ -30,7 +30,7 @@ export const StyledAbout = styled.main`
 
     p {font-size: 1.5rem;}
 
-    #button{
+    button{
       font-family: Inter;
       font-size: 1.5rem;
       color: #ffffff;
@@ -41,6 +41,9 @@ export const StyledAbout = styled.main`
       height: 5vh;
     }
 
-    #button:hover {cursor: pointer;}
+    button:hover {
+      cursor: pointer;
+      background-color: #195324;
+    }
   }
 `

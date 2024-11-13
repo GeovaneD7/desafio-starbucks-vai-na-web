@@ -32,6 +32,10 @@ export const StyledHeader = styled.header`
       color: #1E3932;
       font-size: 1.5rem;
       font-family: Poppins;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #037143;
     }
   }
 `
