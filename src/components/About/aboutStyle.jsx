@@ -8,9 +8,7 @@ export const StyledAbout = styled.main`
 
     height: 85vh;
   }
-  img {
-    height: 50vh;
-  }
+  img {height: 50vh;}
 
   div {
     display: flex;
@@ -28,13 +26,9 @@ export const StyledAbout = styled.main`
       font-size: 1.5rem;
     }
 
-    h3 {
-      font-size: 4rem;
-    }
+    h3 {font-size: 4rem;}
 
-    p {
-      font-size: 1.5rem;
-    }
+    p {font-size: 1.5rem;}
 
     #button{
       font-family: Inter;
@@ -46,5 +40,7 @@ export const StyledAbout = styled.main`
       width: 15vw;
       height: 5vh;
     }
+
+    #button:hover {cursor: pointer;}
   }
 `
