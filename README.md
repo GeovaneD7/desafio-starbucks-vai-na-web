@@ -33,3 +33,7 @@
 - Dentro dessa tag container é estruturado o html contendo os detalhes da página de acordo com o Figma.
 - Para o botão foi optado por usar a tag `<button>` por ser mais semântica e atual.
 - Além da estilização conforme o Figma foi usado o pseudo-elemento `:hover` pra criar a aparência de um link clicável.
+
+### Desenvolvimento do News:
+- Como a maior parte do estilo desta página já estava pronto no `About` foi reutilizado copiando a maior parte do código de estilo do `aboutStyle.jsx` para o `newsStyle.jsx`.
+- Foi adicionado o `background-color` e ajustado o tamanho da imagem.
