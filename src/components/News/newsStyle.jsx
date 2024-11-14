@@ -39,11 +39,11 @@ export const StyledNews = styled.main`
       border-style: none;
       width: 15vw;
       height: 5vh;
-    }
 
-    button:hover {
-      cursor: pointer;
-      background-color: #195324;
+      &:hover {
+        cursor: pointer;
+        background-color: #195324;
+      }
     }
   }
 `

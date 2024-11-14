@@ -21,20 +21,20 @@ export default function Home() {
           <h3>Mais que café</h3>
           <h2>Isso é <h1>Starbucks</h1></h2>
           A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.
-          <button>SAIBA MAIS</button>
+          <button id="mais">SAIBA MAIS</button>
         </div>
         <div id="circulo">
           <img src={copo} alt="" />
         </div>
       </section>
-      <div id="amostras">
-        <button onClick={verLaranja}>
+      <div>
+        <button className="amostras" onClick={verLaranja}>
           <img src={laranjaP} alt="" />
         </button>
-        <button onClick={verVermelho}>
+        <button className="amostras" onClick={verVermelho}>
           <img src={vermelhoP} alt="" />
         </button>
-        <button onClick={verAmarelo}>
+        <button className="amostras" onClick={verAmarelo}>
           <img src={amareloP} alt="" />
         </button>
       </div>
