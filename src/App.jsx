@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { StyleSheetManager } from 'styled-components';
 
 import Header from "./components/Header/Header";
 import News from "./components/News/News";
@@ -8,7 +9,7 @@ import { GlobalStyle } from "./GlobalStyle";
 
 export default function App() {
   return (
-    <>
+    <StyleSheetManager disableVendorPrefixes>
     <BrowserRouter>
       <GlobalStyle/>
       <Header/>
@@ -18,6 +19,6 @@ export default function App() {
         <Route path="/about" element={<About/>}/>
       </Routes>
     </BrowserRouter>
-    </>
+    </StyleSheetManager>
   );
 };
