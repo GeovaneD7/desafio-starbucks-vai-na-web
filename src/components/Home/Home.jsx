@@ -16,18 +16,18 @@ export default function Home() {
 
   return (
     <StyledHome>
-      <section>
+      <section id="anuncio">
         <div id="enunciado">
           <h3>Mais que café</h3>
           <h2>Isso é <h1>Starbucks</h1></h2>
-          A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.
+          <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
           <button id="mais">SAIBA MAIS</button>
         </div>
         <div id="circulo">
-          <img src={copo} alt="" />
+          <img id="copoG" src={copo} alt="" />
         </div>
       </section>
-      <div>
+      <section id="opcoes">
         <button className="amostras" onClick={verLaranja}>
           <img src={laranjaP} alt="" />
         </button>
@@ -37,7 +37,7 @@ export default function Home() {
         <button className="amostras" onClick={verAmarelo}>
           <img src={amareloP} alt="" />
         </button>
-      </div>
+      </section>
     </StyledHome>
   );
 };
