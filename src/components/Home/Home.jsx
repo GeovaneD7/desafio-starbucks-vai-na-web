@@ -8,7 +8,11 @@ import amareloG from "../../assets/amarelo_g.png";
 import laranjaG from "../../assets/laranja_g.png";
 
 export default function Home() {
-  const [copo, setcopo] = useState();
+  const [copo, setCopo] = useState(laranjaG);
+
+  const verLaranja = () => {setCopo(laranjaG)};
+  const verVermelho = () => {setCopo(vermelhoG)};
+  const verAmarelo = () => {setCopo(amareloG)};
 
   return (
     <StyledHome>
@@ -24,13 +28,13 @@ export default function Home() {
         </div>
       </section>
       <div id="amostras">
-        <button>
+        <button onClick={verLaranja}>
           <img src={laranjaP} alt="" />
         </button>
-        <button>
+        <button onClick={verVermelho}>
           <img src={vermelhoP} alt="" />
         </button>
-        <button>
+        <button onClick={verAmarelo}>
           <img src={amareloP} alt="" />
         </button>
       </div>
