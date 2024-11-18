@@ -15,7 +15,7 @@
 
 ### Desenvolvimento do App:
 
-- No `App.jsx` foi importado os atributos `BrowserRouter, Route e Routes` da `react-router-dom`, os componentes `Header, Home, About e News` e o GlobalStyle que será o reset de estilo da página.
+- No `App.jsx` foi importado os atributos `BrowserRouter`, `Route` e `Routes` da `react-router-dom`, os componentes `Header`, `Home`, `About` e `News` e o `GlobalStyle` que será o reset de estilo da página.
 - Foi feito a exportação da função padrão `App()` retornando todos os componentes que serão renderizados. Retornando:
   - GlobalStyle: para indicar onde que ficação as rotas.
   - Header: Para que seja renderizado o menu de navegação.
@@ -37,3 +37,61 @@
 ### Desenvolvimento do News:
 - Como a maior parte do estilo desta página já estava pronto no `About` foi reutilizado copiando a maior parte do código de estilo do `aboutStyle.jsx` para o `newsStyle.jsx`.
 - Foi adicionado o `background-color` e ajustado o tamanho da imagem.
+
+### Desenvolvimento da Home:
+- Na `Home.jsx` foi importado o `useState` o `styledHome` e as imagens que serão usadas nesta página.
+- Para esta página será usado o `useState` para fazer a animação do copo e do círculo colorido.
+- No caso do copo grande foi definido o copo laranja como padrão e no círculo foi delcarado a cor de fundo que será usado posteriormente.
+- Como variáveis foram declaradas: 
+  - `copo` e `setCopo` como variáveis para alterar o estado da imagem de copo grande.
+  - `bgColor` e `setBgColor` 
+
+```jsx
+  const [copo, setCopo] = useState(laranjaG);
+  const [bgColor, setBgColor] = useState('#037143');
+```
+
+- Foram declarados 3 funções `verLaranja`, `verVermelho` e `verAmarelo` que serão usadas pelo botão de mudar os copos grandes.
+- Cada uma dessas funções chamam uma *arrow function* que retorna e executa as alterações das respectivas imagens e cores de fundo do circulo.
+
+```jsx
+const verLaranja = () => {
+    setCopo(laranjaG);
+    setBgColor("#037143");
+  };
+```
+- Para o efeito das imagens que irão mudar conforme os botões são acionados foi declarado da seguinte forma:
+  ```html
+  <div id="circulo" style={{backgroundColor: bgColor}}>
+      <img id="copoG" src={copo} alt="*" />
+  </div>
+  ```
+  - Como a imagem do copo e o círculo ao fundo serão jogados para o canto da tela através de `position` na página de estilo, aqui eles recebem um id de forma a simplificar o código.
+  - A tag `<div>` recebe os atributos `id`, para que seja unicamente identificado, e `style` para que simplifique a lógica da função que mude a cor de fundo. Aqui o atributo `style` recebe a propriedade `backgroundColor` e é passado como parâmetro de cor a variável `bgColor`.
+
+- Para a seção dos botões foi usado uma `<section>` com o id `opcoes` e dentro dessa tag foi declarado todos botões utilizando o seguinte esquema:
+```html
+<section id="opcoes">
+        <button className="amostras" onClick={verLaranja}>
+          <img src={laranjaP} alt="*" />
+        </button>
+```
+- Cada botão recebe o elemento `onClick` que chama a respectiva função para mudar o que seráexibido na amostra e a tag `<img>` foi declarada usando as imagens que foram importada, desta forma a função pode alterar corretamente quando o botão for acionado.
+- O restante da pagina foi estruturado para seguir a ordem dos componentes de acordo com o Figma.
+- Na estilização foi usado um pouco de aninhamento para manter o código limpo e direfente das outras páginas aqui foi necessário que o botão de *SAIBA MAIS* recebesse uma id para diferenciar dos botões que alteram a cor do copo no mostuário.
+- No estilo do círculo colorido ao fundo do copo foi utilizado `position` e `z-index`.
+- Como a imagem do copo já estava contida dentro da *div* do círculo não foi necessário utilizar position para puxar a imagem para o canto.
+
+
+
+> TODO
+- ADICIONAR O QUE FOI FEITO NA HOME
+- DAR COMIT+PUSH
+
+- ADICIONAR O TODOS OS alt DAS IMAGENS
+- ADICIONAR ISSO NA DOCUMENTAÇÃO
+- COMMIT+PUSH
+
+- ADICIONAR RESPONSIVIDADE PARA TELA PEQUENA
+- DOCUMENTAÇÃO DE RESPONSIVIDADE
+- COMMIT+PUSH
