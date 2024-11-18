@@ -22,6 +22,9 @@
   - Routes: Tag pai que acolherá as rotas em si.
   - Route: Uma rota para cada caminho da página web.
 
+### Reset global
+- O reset global foi criado conforme o padrão exceto pela adição do atributo `overflow: hidden;` no *body* para que seja possível que o circulo de fundo fique escondido fora dos limites da página. Importante notar que como todas as páginas serão apenas um único tamanho não há nenhum problema em usar essa funcionalidade para toda a página, porém caso seja necessário adicionar rolagem em alguma página do site, este atributo deve ser revisado.
+
 ### Desenvolvimento da Header:
 
 - Na Header foi usado o atributo `Link` dentro das `<li>` para indicar a navegação e importado o arquivo de estilização `headerStyle.jsx`.
@@ -82,16 +85,5 @@ const verLaranja = () => {
 - No estilo do círculo colorido ao fundo do copo foi utilizado `position` e `z-index`.
 - Como a imagem do copo já estava contida dentro da *div* do círculo não foi necessário utilizar position para puxar a imagem para o canto.
 
-
-
-> TODO
-- ADICIONAR O QUE FOI FEITO NA HOME
-- DAR COMIT+PUSH
-
-- ADICIONAR O TODOS OS alt DAS IMAGENS
-- ADICIONAR ISSO NA DOCUMENTAÇÃO
-- COMMIT+PUSH
-
-- ADICIONAR RESPONSIVIDADE PARA TELA PEQUENA
-- DOCUMENTAÇÃO DE RESPONSIVIDADE
-- COMMIT+PUSH
+#### Updates
+- Adicionado um texto `alt` em todas as imagens do site.
