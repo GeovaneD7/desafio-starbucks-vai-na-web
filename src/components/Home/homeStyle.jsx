@@ -37,7 +37,6 @@ export const StyledHome = styled.main`
   p { font-size: 1.5rem; }
   
   #circulo {
-    background-color: #037143;
     border-radius: 1000px;
     width: 1200px;
     height: 1200px;

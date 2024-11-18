@@ -9,10 +9,20 @@ import laranjaG from "../../assets/laranja_g.png";
 
 export default function Home() {
   const [copo, setCopo] = useState(laranjaG);
+  const [bgColor, setBgColor] = useState('#037143');
 
-  const verLaranja = () => {setCopo(laranjaG)};
-  const verVermelho = () => {setCopo(vermelhoG)};
-  const verAmarelo = () => {setCopo(amareloG)};
+  const verLaranja = () => {
+    setCopo(laranjaG);
+    setBgColor("#037143");
+  };
+  const verVermelho = () => {
+    setCopo(vermelhoG);
+    setBgColor("#97090C");
+  };
+  const verAmarelo = () => {
+    setCopo(amareloG);
+    setBgColor("#DECD13");
+  };
 
   return (
     <StyledHome>
@@ -23,7 +33,7 @@ export default function Home() {
           <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
           <button id="mais">SAIBA MAIS</button>
         </div>
-        <div id="circulo">
+        <div id="circulo" style={{backgroundColor: bgColor}}>
           <img id="copoG" src={copo} alt="" />
         </div>
       </section>
