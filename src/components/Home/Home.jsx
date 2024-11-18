@@ -34,18 +34,18 @@ export default function Home() {
           <button id="mais">SAIBA MAIS</button>
         </div>
         <div id="circulo" style={{backgroundColor: bgColor}}>
-          <img id="copoG" src={copo} alt="" />
+          <img id="copoG" src={copo} alt="Um copo grande mostrando uma deliciosa bebida gelada" />
         </div>
       </section>
       <section id="opcoes">
         <button className="amostras" onClick={verLaranja}>
-          <img src={laranjaP} alt="" />
+          <img src={laranjaP} alt="Miniatura de um copo na cor laranja" />
         </button>
         <button className="amostras" onClick={verVermelho}>
-          <img src={vermelhoP} alt="" />
+          <img src={vermelhoP} alt="Miniatura de um copo na cor vermelha" />
         </button>
         <button className="amostras" onClick={verAmarelo}>
-          <img src={amareloP} alt="" />
+          <img src={amareloP} alt="Miniatura de um copo na cor amarela" />
         </button>
       </section>
     </StyledHome>

@@ -5,7 +5,7 @@ export default function About() {
   return (
     <StyledAbout>
       <section>
-        <img src={loja} alt="" />
+        <img src={loja} alt="Uma foto em preto e branco mostrando uma fachada de uma das primeiras lojas Starbucks." />
         <div>
           <h2>PREPARAÇÃO</h2>
           <h3>Níveis de Torra</h3>

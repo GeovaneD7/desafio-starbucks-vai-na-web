@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <nav>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logo do Starbucks, Uma sereia coroada num fundo verde." />
         <ul>
           <li>
             <Link to="/">Home</Link>
