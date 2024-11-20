@@ -1,3 +1,15 @@
+# Desafio Final Módulo 2 - Vai na Web
+
+## Descrição do desafio:
+
+### Objetivo: 
+Desenvolver um site que deve ser fiel ao design proposto no Figma colocando em prática o que aprendeu ao longo do módulo 2 desenvolvendo técnicas de React e Styled-Component, além de demonstrar as habilidades aprendidas no Módulo 1 como HTML, CSS e Git.
+
+### Especificações do Projeto:
+- Desenvolver uma aplicação web em React seguindo o modelo proposto no [Figma](https://www.figma.com/design/lDEBqDNjbhumoZwQ7CBL7P/Starbucks?node-id=0-1&node-type=canvas&t=mB1nysvZUBrsRoip-0).
+- A estilização deve ser feita usando **Styled-Component**.
+- Semântico: Utilizar as tags de maneira apropriada, garantindo que o conteúdo seja facilmente compreendido e acessível.
+- Nomenclatura Coerente: Utilizar nomes que descrevam o papel ou a função visual do componente na interface.
 
 ---
 
@@ -84,6 +96,9 @@ const verLaranja = () => {
 - Na estilização foi usado um pouco de aninhamento para manter o código limpo e direfente das outras páginas aqui foi necessário que o botão de *SAIBA MAIS* recebesse uma id para diferenciar dos botões que alteram a cor do copo no mostuário.
 - No estilo do círculo colorido ao fundo do copo foi utilizado `position` e `z-index`.
 - Como a imagem do copo já estava contida dentro da *div* do círculo não foi necessário utilizar position para puxar a imagem para o canto.
+
+
+
 
 #### Updates
 - Adicionado um texto `alt` em todas as imagens do site.
