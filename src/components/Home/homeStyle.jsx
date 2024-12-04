@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.main`
-  main {
-    height: 85vh;
-  }
+  main { height: 85vh; }
 
   section {
     display: flex;
@@ -25,9 +23,9 @@ export const StyledHome = styled.main`
   h2 {
     font-weight: 400;
     font-size: 3.6rem;
+
     h1 {
       color: #037143;
-      
       display: inline;
     }
   }
@@ -46,9 +44,7 @@ export const StyledHome = styled.main`
     top: 200px;
     z-index: -1;
 
-    img {
-      height: 50vh;
-    }
+    img { height: 50vh; }
   }
 
   #opcoes {

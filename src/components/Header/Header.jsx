@@ -8,15 +8,9 @@ export default function Header() {
       <nav>
         <img src={logo} alt="Logo do Starbucks, Uma sereia coroada num fundo verde." />
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/news">Novidades</Link>
-          </li>
-          <li>
-            <Link to="/about">Sobre</Link>
-          </li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/news">Novidades</Link></li>
+          <li><Link to="/about">Sobre</Link></li>
         </ul>
       </nav>
     </StyledHeader>

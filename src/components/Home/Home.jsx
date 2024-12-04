@@ -33,6 +33,7 @@ export default function Home() {
           <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
           <button id="mais">SAIBA MAIS</button>
         </div>
+        
         <div id="circulo" style={{backgroundColor: bgColor}}>
           <img id="copoG" src={copo} alt="Um copo grande mostrando uma deliciosa bebida gelada" />
         </div>
@@ -41,9 +42,11 @@ export default function Home() {
         <button className="amostras" onClick={verLaranja}>
           <img src={laranjaP} alt="Miniatura de um copo na cor laranja" />
         </button>
+
         <button className="amostras" onClick={verVermelho}>
           <img src={vermelhoP} alt="Miniatura de um copo na cor vermelha" />
         </button>
+        
         <button className="amostras" onClick={verAmarelo}>
           <img src={amareloP} alt="Miniatura de um copo na cor amarela" />
         </button>

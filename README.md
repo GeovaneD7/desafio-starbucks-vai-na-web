@@ -85,12 +85,14 @@ const verLaranja = () => {
   - A tag `<div>` recebe os atributos `id`, para que seja unicamente identificado, e `style` para que simplifique a lógica da função que mude a cor de fundo. Aqui o atributo `style` recebe a propriedade `backgroundColor` e é passado como parâmetro de cor a variável `bgColor`.
 
 - Para a seção dos botões foi usado uma `<section>` com o id `opcoes` e dentro dessa tag foi declarado todos botões utilizando o seguinte esquema:
+
 ```html
 <section id="opcoes">
         <button className="amostras" onClick={verLaranja}>
           <img src={laranjaP} alt="*" />
         </button>
 ```
+
 - Cada botão recebe o elemento `onClick` que chama a respectiva função para mudar o que seráexibido na amostra e a tag `<img>` foi declarada usando as imagens que foram importada, desta forma a função pode alterar corretamente quando o botão for acionado.
 - O restante da pagina foi estruturado para seguir a ordem dos componentes de acordo com o Figma.
 - Na estilização foi usado um pouco de aninhamento para manter o código limpo e direfente das outras páginas aqui foi necessário que o botão de *SAIBA MAIS* recebesse uma id para diferenciar dos botões que alteram a cor do copo no mostuário.
