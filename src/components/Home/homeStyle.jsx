@@ -34,17 +34,25 @@ export const StyledHome = styled.main`
 
   p { font-size: 1.5rem; }
   
-  #circulo {
-    border-radius: 1000px;
-    width: 1200px;
-    height: 1200px;
-
-    position: relative;
-    left: 500px;
-    top: 200px;
+  #elipse {
+    position: absolute;
+    top: 44vh;
+    left: 60vw;
     z-index: -1;
 
-    img { height: 50vh; }
+    width: 40vw;
+  }
+
+  #copoG { 
+    position: relative;
+    width: 27vw;
+    left: 20vw;
+    bottom: 40vh;
+  }
+
+  #vitrine {
+    display: flex;
+    justify-content: center;
   }
 
   #opcoes {
