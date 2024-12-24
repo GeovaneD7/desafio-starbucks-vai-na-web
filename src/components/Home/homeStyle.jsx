@@ -30,9 +30,20 @@ export const StyledHome = styled.main`
     }
   }
 
-  #enunciado { width: 800px; }
+  #enunciado { width: 800px; 
+  
+    @media (min-width: 960px) {
+      width: 55vw;
+    }
+  }
 
-  p { font-size: 1.5rem; }
+  p { 
+    font-size: 1.5rem;
+
+    @media (min-width: 960px) {
+      font-size: 1.2rem;
+    }
+  }
   
   #elipse {
     position: absolute;

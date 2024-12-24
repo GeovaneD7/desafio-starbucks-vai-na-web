@@ -21,12 +21,22 @@ export const StyledAbout = styled.main`
     height: 40%;
     font-family: Poppins;
 
+    @media (min-width: 960px) {
+      height: 50%;
+    }
+
     h2 {
       font-family: Inter;
       font-size: 1.5rem;
     }
 
-    h3 {font-size: 4rem;}
+    h3 {
+      font-size: 4rem;
+
+      @media (min-width: 960px) {
+        font-size: 3rem;
+      }
+    }
 
     p {font-size: 1.5rem;}
 

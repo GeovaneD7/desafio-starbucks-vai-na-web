@@ -9,6 +9,10 @@ export const StyledHeader = styled.header`
     
     height: 15vh;
     margin: 0 4vw;
+
+    @media (min-width: 960px) {
+      height: 12vh;
+    }
   }
   
   img {
