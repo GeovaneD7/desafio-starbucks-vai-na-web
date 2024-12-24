@@ -32,7 +32,7 @@ export const StyledHome = styled.main`
 
   #enunciado { width: 800px; 
   
-    @media (min-width: 960px) {
+    @media (max-width: 1285px) {
       width: 55vw;
     }
   }
@@ -40,8 +40,8 @@ export const StyledHome = styled.main`
   p { 
     font-size: 1.5rem;
 
-    @media (min-width: 960px) {
-      font-size: 1.2rem;
+    @media (max-width: 1285px) {
+      font-size: 1.3rem;
     }
   }
   

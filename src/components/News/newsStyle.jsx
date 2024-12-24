@@ -25,7 +25,7 @@ export const StyledNews = styled.main`
     height: 40%;
     font-family: Poppins;
 
-    @media (min-width: 960px) {
+    @media (max-width: 1285px) {
       height: 50%;
     }
 
@@ -37,7 +37,7 @@ export const StyledNews = styled.main`
     h3 {
       font-size: 4rem;
 
-      @media (min-width: 960px) {
+      @media (max-width: 1285px) {
         font-size: 3rem;
       }
     }
